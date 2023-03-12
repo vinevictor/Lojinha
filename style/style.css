@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: yellow;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+}
+.search {
+  line-height: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.textSearch {
+  width: 400px;
+  height: 25px;
+  border: none;
+  border-radius: 1vh;
+}
+
+.navOptions {
+  line-height: 50px;
+  height: 60px;
+  width: 100vw;
+  text-align: center;
+  border-top: black solid;
+  border-bottom: black solid;
+}
+
+.navOptions a {
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 1vw;
+  margin: 0px 10px;
+  padding: 4px;
+}
+
+.navOptions a:hover {
+  background-color: rgba(128, 128, 128, 0.493);
+}
+
+.content {
+  display: flex;
+  width: 100vw;
+  height: 200vh;
+  background-color: rgba(128, 128, 128, 0.164);
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.beneficios {
+  display: flex;
+  flex-flow: row;
+  margin: 40px 0px;
+  width: 1500px;
+  height: 100px;
+  background-color: white;
+  border-radius: 1vh;
+}
+
+.offerFirst {
+  height: 100px;
+  width: 355px;
+  margin: 0px 10px;
+  border-right: black solid;
+}
+.offer {
+  height: 100px;
+  width: 355px;
+  margin: 0px 10px;
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+  width: 90vw;
+  height: 80vh;
+  justify-content: center;
+}
+
+.gridItens {
+  overflow: hidden;
+  text-align: center;
+  margin: 1vh 1vw;
+  height: 30vh;
+  background-color: white;
+  border-radius: 1vh;
+}
+.gridItens h3 {
+  font-size: 26px;
+}
+.gridItens img {
+  border-radius: 1vh;
+}
+
+.gridItens h4 {
+  font-size: smaller;
+  text-decoration: line-through;
+  text-align: left;
+  display: none;
+  margin-left: 1vw;
+}
+
+.gridItens:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  height: 35vh;
+}
+
+.gridItens:hover h4 {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .beneficios {
+    display: none;
+  }
+}
